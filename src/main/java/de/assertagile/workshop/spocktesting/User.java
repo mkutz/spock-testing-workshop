@@ -9,7 +9,7 @@ public class User {
     private final String lastName;
     private final LocalDate birthday;
 
-    public User(String userName, String firstName, String lastName, LocalDate birthday) {
+    public User(final String userName, final String firstName, final String lastName, final LocalDate birthday) {
         this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
