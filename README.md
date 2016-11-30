@@ -28,6 +28,16 @@ Then try to do the following objectives:
 - [ ] Change the constructor to make the feature no longer pending and remove the annotation.
 - [ ] Write another feature method that specifies that no exception in thrown if the birthday is in the past.
 
+Part 2: Data Driven Testing
+---------------------------
+Read the [Data Driven Testing] to learn about `where` blocks and their data table and pipe notations and the `@Unroll` annotation.
+
+Then try to do the following objectives:
+- [ ] If you did the very least necessary in part 1, the implementation of `isOfAge` is not really how its name suggests because not only users are of age whose 18th birthday is today! Write another feature method to ensure that `"isOfAge should return true if the user's birthday is more than 18 years ago"`. Use a `where` block to test several cases.
+- [ ] Add an `@Unroll` annotation to get more information about which cases have succeeded and which did not.
+- [ ] Add another data driven test to test negative cases.
+- [ ] (optional) Review your features and try to make more test data driven.
+
 Helpful Resources and Further Reading
 -------------------------------------
 * [Spock Framework Reference Documentation]
@@ -42,6 +52,7 @@ Helpful Resources and Further Reading
 [Spock]: <http://spockframework.org/>
 [Spock Framework Reference Documentation]: <http://docs.spockframework.org/>
 [Spock Primer]: <http://spockframework.org/spock/docs/1.1-rc-3/spock_primer.html>
+[Data Driven Testing]: <http://spockframework.org/spock/docs/1.1-rc-3/data_driven_testing.html>
 
 [pom.xml]: <pom.xml>
 
