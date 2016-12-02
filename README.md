@@ -17,9 +17,9 @@ Part 1: Blocks, Expectations and Pending Features
 -------------------------------------------------
 Read the [Spock Primer section] of the [Spock Framework Reference Documentation] to learn about the basic [Spock] terminology, fixture and feature methods, blocks and expectations.
 
-Note that in contrast to the [Spock Primer], I prefer using `given` instead of `setup` for I like my test to be as close to natural language as possible and `setup` does not sound very natural to me.
+Note that in contrast to the [Spock Primer][Spock Primer section], I prefer using `given` instead of `setup` for I like my test to be as close to natural language as possible and `setup` does not sound very natural to me.
 
-Also I don't like block comments to stay in the test after it has been implemented (as suggested in the [Specifications as Documentation] section) for I want the *code* to be self-explanatory.
+Also I don't like block comments to stay in the test after it has been implemented (as suggested in [Specifications as Documentation]) for I want the *code* to be self-explanatory.
 
 Then try to do the following objectives:
 - [ ] The method `isOfAge` method in [User] is not implemented properly yet. However there is a test in [UserClassSpec] which is annotated with `@PendingFeature`. Change `isOfAge`, in order to make the test's expectation be true. Once you did, remove the annotation.<br/>
@@ -46,25 +46,23 @@ Read the [Interaction Based Testing section] of the [Spock Framework Reference D
 Then try to do the following objectives:
 - [ ] We want to write a test for the [UserService] which ensures that `"registerUser persists the user data via UserRepository"`. Use a Mock for the [UserRepository] since we don't want to test it here (and there is no implantation 😉). Feel free to use a Mock for the [User] object as well.
 - [ ] We want to avoid registering users which are already registered. Write another feature method that ensures that `"registerUser does not persist user data if the user name was registered before"`. Make your test succeed, ensuring that all others still don't fail. Also we might want to throw an exception in that case.
-- [ ]
+- [ ] ...
 
 
 Helpful Resources and Further Reading
 -------------------------------------
 * [Spock Framework Reference Documentation], especially the [Extensions section] and the [Modules section] not used in this workshop.
+* [Idiomatic Spock] is a presentation by Rob Flechter about som tricks how to write Spock specifications in a better way.
 * [Groovy documentation]
-* [Idiomatic Spock]
 
 
 [Groovy]: <http://www.groovy-lang.org/>
 [Groovy documentation]: <http://www.groovy-lang.org/documentation.html>
-[Specifications as Documentation]:
-    Pesentation by Rob Fletcher about good practices to improve your Spock code.
-    <http://spockframework.org/spock/docs/1.1-rc-3/spock_primer.html#specs-as-doc>
 
 [Spock]: <http://spockframework.org/>
 [Spock Framework Reference Documentation]: <http://docs.spockframework.org/>
 [Spock Primer section]: <http://spockframework.org/spock/docs/1.1-rc-3/spock_primer.html>
+[Specifications as Documentation section]: <http://spockframework.org/spock/docs/1.1-rc-3/spock_primer.html#specs-as-doc>
 [Data Driven Testing section]: <http://spockframework.org/spock/docs/1.1-rc-3/data_driven_testing.html>
 [Interaction Based Testing section]: <http://spockframework.org/spock/docs/1.1-rc-3/interaction_based_testing.html>
 [Extensions section]: <http://spockframework.org/spock/docs/1.1-rc-3/extensions.html>
