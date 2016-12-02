@@ -2,5 +2,7 @@ package de.assertagile.workshop.spocktesting;
 
 interface UserRepository {
 
-    void saveUser(UserEntity user);
+    void saveUser(final UserEntity user);
+
+    UserEntity findUserByUserName(final String userName);
 }
