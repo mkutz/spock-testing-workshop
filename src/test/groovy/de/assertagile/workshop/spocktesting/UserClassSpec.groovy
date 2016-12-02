@@ -5,12 +5,10 @@ import spock.lang.Subject
 
 import java.time.LocalDate
 
-class UserSpec extends Specification {
+class UserClassSpec extends Specification {
 
     @Subject
-    //User user
-
-    User user = new User()
+    User user
 
     def "isOfAge should return true if the user's birthday is 18 years ago"() {
         given:
