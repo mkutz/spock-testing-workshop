@@ -33,8 +33,4 @@ class UserClassSpec extends Specification {
         then:
         isOfAge
     }
-
-    def "isOfAge should return true uf the user's birthday is more than 18 years ago"() {
-        // TODO implement this
-    }
 }
