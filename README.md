@@ -24,7 +24,7 @@ Also I don't like block comments to stay in the test after it has been implement
 Then try to do the following objectives:
 - [ ] The method `isOfAge` method in [User] is not implemented properly yet. However there is a test in [UserClassSpec] which is annotated with `@PendingFeature`. Change `isOfAge`, in order to make the test's expectation be true. Once you did, remove the annotation.<br/>
   Don't implement the method, just make the test's expectation true doing the very least necessary.
-- [ ] The test uses `given`, `when` and `then`. Try to make it shorter using an `expect` block.
+- [ ] The feature methods uses `given`, `when` and `then`. Try to make it shorter using an `expect` block.
 - [ ] Our current implementation of [User] allows to create users who were not born yet. Write a `@PendingFeature` that expects that `"creating a user with a future birthday throws an IllegalArgumentExpecption"`.
 - [ ] Adjust [User] to make the feature no longer pending and remove the annotation.
 - [ ] Write another feature method that specifies that `"no exception in thrown if the birthday is in the past"`.
