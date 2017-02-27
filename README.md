@@ -19,7 +19,7 @@ Read the [Spock Primer section] of the [Spock Framework Reference Documentation]
 
 Note that in contrast to the [Spock Primer][Spock Primer section], I prefer using `given` instead of `setup` for I like my test to be as close to natural language as possible and `setup` does not sound very natural to me.
 
-Also I don't like block comments to stay in the test after it has been implemented (as suggested in [Specifications as Documentation]) for I want the *code* to be self-explanatory.
+Also I don't like block comments to stay in the test after it has been implemented (as suggested in the [Specifications as Documentation section]) for I want the *code* to be self-explanatory.
 
 Then try to do the following objectives:
 - [ ] The method `isOfAge` method in [User] is not implemented properly yet. However there is a test in [UserClassSpec] which is annotated with `@PendingFeature`. Change `isOfAge`, in order to make the test's expectation be true. Once you did, remove the annotation.<br/>
