@@ -1,6 +1,6 @@
 Spock Testing Workshop
 ======================
-Just a project I use in exercises about testing Java projects with [Spock] and [Groovy].
+Workshop for testing Java projects with [Spock] and [Groovy].
 
 Project Setup with Maven
 ------------------------
