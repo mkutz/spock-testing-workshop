@@ -11,7 +11,7 @@ class UserClassSpec extends Specification {
     @Subject
     User user
 
-    def "isOfAge should return false if the user's bithday is less than 18 years ago"() {
+    def "isOfAge should return false if the user's birthday is less than 18 years ago"() {
         given:
         user = new User("jdoe", "John", "Doe", LocalDate.now().minusYears(17))
 
