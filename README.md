@@ -1,5 +1,8 @@
 Spock Testing Workshop
 ======================
+
+[![Build Status](https://travis-ci.org/mkutz/spock-testing-workshop.svg?branch=master)](https://travis-ci.org/mkutz/spock-testing-workshop)
+
 Workshop for testing Java projects with [Spock] and [Groovy].
 
 Project Setup with Maven
