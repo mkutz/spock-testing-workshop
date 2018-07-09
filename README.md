@@ -64,12 +64,12 @@ Helpful Resources and Further Reading
 
 [Spock]: <http://spockframework.org/>
 [Spock Framework Reference Documentation]: <http://docs.spockframework.org/>
-[Spock Primer section]: <http://spockframework.org/spock/docs/1.1-rc-3/spock_primer.html>
-[Specifications as Documentation section]: <http://spockframework.org/spock/docs/1.1-rc-3/spock_primer.html#specs-as-doc>
-[Data Driven Testing section]: <http://spockframework.org/spock/docs/1.1-rc-3/data_driven_testing.html>
-[Interaction Based Testing section]: <http://spockframework.org/spock/docs/1.1-rc-3/interaction_based_testing.html>
-[Extensions section]: <http://spockframework.org/spock/docs/1.1-rc-3/extensions.html>
-[Modules section]: <http://spockframework.org/spock/docs/1.1-rc-3/modules.html>
+[Spock Primer section]: <http://spockframework.org/spock/docs/1.1/spock_primer.html>
+[Specifications as Documentation section]: <http://spockframework.org/spock/docs/1.1/spock_primer.html#specs-as-doc>
+[Data Driven Testing section]: <http://spockframework.org/spock/docs/1.1/data_driven_testing.html>
+[Interaction Based Testing section]: <http://spockframework.org/spock/docs/1.1/interaction_based_testing.html>
+[Extensions section]: <http://spockframework.org/spock/docs/1.1/extensions.html>
+[Modules section]: <http://spockframework.org/spock/docs/1.1/modules.html>
 
 [Idiomatic Spock]: <https://github.com/robfletcher/idiomatic-spock/blob/master/Idiomatic%20Spock.pdf>
 
