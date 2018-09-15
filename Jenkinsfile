@@ -16,9 +16,7 @@ pipeline {
 
         stage("Build") {
             steps {
-                ansiColor("xterm") {
-                    sh "mvn package"
-                }
+                sh "mvn -B package"
             }
         }
     }
