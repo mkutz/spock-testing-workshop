@@ -11,10 +11,10 @@ In order to get [Spock] into our Maven project, we need to do the following in o
 
 1. Add Groovy as a (test) dependency (see [pom.xml](pom.xml#L27-L33)).
 2. Add Spock dependency (see [pom.xml](pom.xml#L35-L40)).
-3. Add the Bintray plugin repository for the latest Groovy Eclipse compiler (see [pom.xml](pom.xml#L138-L150)). Then add compiler configuration for Groovy since Maven’s default only compiles Java (see [pom.xml](pom.xml#L95-L121)).
+3. Add CGLib and Objenesis in order to be able to Mock classes (see [pom.xml](pom.xml#L42-L58)).
 4. Make Maven aware of `/src/test/groovy` being a test source directory since Maven’s default is `/src/test/java` (see [pom.xml](pom.xml#L77-L78)).
-5. Make Maven Surefire plugin aware of files ending with `*Spec` are test class files since Surefire’s default is `*Test` (see [pom.xml](pom.xml#L123-L134)).
-6. Add CGLib and Objenesis in order to be able to Mock classes (see [pom.xml](pom.xml#L42-L58)).
+5. Add the [GMavenPlus] plugin, to compile your Groovy sources (see [pom.xml](pom.xml#L83-L95)).
+6. Make Maven Surefire plugin aware of files ending with `*Spec` are test class files since Surefire’s default is `*Test` (see [pom.xml](pom.xml#L103-L113)).
 
 Part 1: Blocks, Expectations and Pending Features
 -------------------------------------------------
@@ -58,6 +58,8 @@ Helpful Resources and Further Reading
 * [Idiomatic Spock] is a presentation by Rob Flechter about som tricks how to write Spock specifications in a better way.
 * [Groovy documentation]
 
+
+[GMavenPlus]: <https://github.com/groovy/GMavenPlus>
 
 [Groovy]: <http://www.groovy-lang.org/>
 [Groovy documentation]: <http://www.groovy-lang.org/documentation.html>
