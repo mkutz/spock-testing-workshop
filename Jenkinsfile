@@ -6,6 +6,7 @@ pipeline {
 
     tools {
         maven "Maven"
+        jdk "java11"
     }
 
     options {
