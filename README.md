@@ -45,7 +45,7 @@ Part 3: Mocking and Stubbing
 Read the [Interaction Based Testing section] of the [Spock Framework Reference Documentation] to learn about Mocks, Stubs and Spies.
 
 Then try to do the following objectives:
-- [ ] We want to write a test for the [UserService] which ensures that `"registerUser persists the user data via UserRepository"`. Use a Mock for the [UserRepository] since we don't want to test it here (and there is no implantation 😉). Feel free to use a Mock for the [User] object as well.
+- [ ] We want to write a test for the [UserService] which ensures that `"registerUser persists the user data via UserRepository"`. Use a Mock for the [UserRepository] since we don't want to test it here (and there is no implantation 😉). Feel free to use a Mock for the [User] object as well, but I'd generally not recommend to mock simple classes as this.
 - [ ] We want to avoid registering users which are already registered. Write another feature method that ensures that `"registerUser does not persist user data if the user name was registered before"`. Make your test succeed, ensuring that all others still don't fail. Also we might want to throw an exception in that case.
 - [ ] ...
 
