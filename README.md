@@ -11,7 +11,7 @@ In order to get [Spock] into our Maven project, we need to do the following in o
 
 1. Add Groovy as a (test) dependency (see [pom.xml](pom.xml#L27-L33)).
 2. Add Spock dependency (see [pom.xml](pom.xml#L35-L40)).
-3. Add CGLib and Objenesis in order to be able to Mock classes (see [pom.xml](pom.xml#L42-L58)).
+3. Add ByteBuddy and Objenesis in order to be able to Mock classes (see [pom.xml](pom.xml#L42-L58)).
 4. Make Maven aware of `/src/test/groovy` being a test source directory since Maven’s default is `/src/test/java` (see [pom.xml](pom.xml#L77-L78)).
 5. Add the [GMavenPlus] plugin, to compile your Groovy sources (see [pom.xml](pom.xml#L81-L95)).
 6. Make Maven Surefire plugin aware of files ending with `*Spec` are test class files since Surefire’s default is `*Test` (see [pom.xml](pom.xml#L102-L113)).
