@@ -1,6 +1,8 @@
 Spock Testing Workshop
 ======================
 
+[![Actions Status](https://github.com/mkutz/spock-testing-workshop/workflows/CI/badge.svg)](https://github.com/mkutz/spock-testing-workshop/actions)
+
 Workshop for testing Java projects with [Spock] and [Groovy].
 
 Project Setup with Maven
