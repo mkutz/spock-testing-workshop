@@ -24,5 +24,7 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 11.x
-      - name: build
+      - name: build with Maven
         run: mvn -B package
+      - name: build with Gradle
+        run: gradlew build

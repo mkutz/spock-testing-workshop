@@ -16,6 +16,15 @@ In order to get [Spock] into our Maven project, we need to do the following in o
 5. Add the [GMavenPlus] plugin, to compile your Groovy sources (see [pom.xml](pom.xml#L81-L95)).
 6. Make Maven Surefire plugin aware of files ending with `*Spec` are test class files since Surefire’s default is `*Test` (see [pom.xml](pom.xml#L102-L113)).
 
+Project Setup with Gradle
+-------------------------
+In order to get [Spock] into our Gradle project, we need to do the following in our [build.gradle].
+
+1. Add the Groovy plugin (see [build.gradle](build.gradle#L3)).
+2. Add Groovy as a `testImplementation` dependency (see [build.gradle](build.gradle#L12)).
+3. Add Spock dependency (see [build.gradle](build.gradle#L13)).
+4. Add ByteBuddy and Objenesis in order to be able to Mock classes (see [build.gradle](build.gradle#L14-15)).
+
 Part 1: Blocks, Expectations and Pending Features
 -------------------------------------------------
 Read the [Spock Primer section] of the [Spock Framework Reference Documentation] to learn about the basic [Spock] terminology, fixture and feature methods, blocks and expectations.
