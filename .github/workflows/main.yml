@@ -27,4 +27,4 @@ jobs:
       - name: build with Maven
         run: mvn -B package
       - name: build with Gradle
-        run: gradlew build
+        run: ./gradlew build
