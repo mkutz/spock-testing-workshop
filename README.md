@@ -1,12 +1,9 @@
-Spock Testing Workshop
-======================
-
-[![Actions Status](https://github.com/mkutz/spock-testing-workshop/workflows/CI/badge.svg)](https://github.com/mkutz/spock-testing-workshop/actions)
+# Spock Testing Workshop [![Actions Status](https://github.com/mkutz/spock-testing-workshop/workflows/CI/badge.svg)](https://github.com/mkutz/spock-testing-workshop/actions)
 
 Workshop for testing Java projects with [Spock] and [Groovy].
 
-Project Setup with Maven
-------------------------
+## Project Setup with Maven
+
 In order to get [Spock] into our Maven project, we need to do the following in our [pom.xml].
 
 1. Add Groovy as a (test) dependency (see [pom.xml](pom.xml#L27-L33)).
@@ -16,8 +13,8 @@ In order to get [Spock] into our Maven project, we need to do the following in o
 5. Add the [GMavenPlus] plugin, to compile your Groovy sources (see [pom.xml](pom.xml#L81-L95)).
 6. Make Maven Surefire plugin aware of files ending with `*Spec` are test class files since Surefire’s default is `*Test` (see [pom.xml](pom.xml#L102-L113)).
 
-Project Setup with Gradle
--------------------------
+## Project Setup with Gradle
+
 In order to get [Spock] into our Gradle project, we need to do the following in our [build.gradle].
 
 1. Add the Groovy plugin (see [build.gradle](build.gradle#L3)).
@@ -25,8 +22,8 @@ In order to get [Spock] into our Gradle project, we need to do the following in 
 3. Add Spock dependency (see [build.gradle](build.gradle#L13)).
 4. Add ByteBuddy and Objenesis in order to be able to Mock classes (see [build.gradle](build.gradle#L14-15)).
 
-Part 1: Blocks, Expectations and Pending Features
--------------------------------------------------
+## Part 1: Blocks, Expectations and Pending Features
+
 Read the [Spock Primer section] of the [Spock Framework Reference Documentation] to learn about the basic [Spock] terminology, fixture and feature methods, blocks and expectations.
 
 Also I don't like block comments to stay in the test after it has been implemented (as suggested in the [Specifications as Documentation section]) for I want the *code* to be self-explanatory.
@@ -39,8 +36,8 @@ Then try to do the following objectives:
 - [ ] Adjust [User] to make the feature no longer pending and remove the annotation.
 - [ ] Write another feature method that specifies that `"no exception in thrown if the birthday is in the past"`.
 
-Part 2: Data Driven Testing
----------------------------
+## Part 2: Data Driven Testing
+
 Read the [Data Driven Testing section] of the [Spock Framework Reference Documentation] to learn about `where` blocks and their data table and pipe notations and the `@Unroll` annotation.
 
 Then try to do the following objectives:
@@ -49,8 +46,8 @@ Then try to do the following objectives:
 - [ ] Add another data driven test to test negative cases.
 - [ ] Review your features and try to make more test data driven.
 
-Part 3: Mocking and Stubbing
-----------------------------
+## Part 3: Mocking and Stubbing
+
 Read the [Interaction Based Testing section] of the [Spock Framework Reference Documentation] to learn about Mocks, Stubs and Spies.
 
 Then try to do the following objectives:
@@ -59,8 +56,8 @@ Then try to do the following objectives:
 - [ ] ...
 
 
-Helpful Resources and Further Reading
--------------------------------------
+## Helpful Resources and Further Reading
+
 * [Spock Framework Reference Documentation], especially the [Extensions section] and the [Modules section] not used in this workshop.
 * [Idiomatic Spock] is a presentation by Rob Flechter about som tricks how to write Spock specifications in a better way.
 * [Groovy documentation]
