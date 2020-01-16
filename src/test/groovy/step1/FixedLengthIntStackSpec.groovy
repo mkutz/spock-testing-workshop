@@ -10,10 +10,10 @@ class FixedLengthIntStackSpec extends Specification {
     FixedLengthIntStack stack = new FixedLengthIntStack(10)
 
     def "a new stack is empty"() {
-        expect: 'stack has no items'
+        expect: "stack has no items"
     }
 
-    def "pushing and item increases the stack size by one"(){
+    def "pushing an item increases the stack size by one"(){
         when: "add one item"
         then: "stack size is 1 larger than before"
     }
@@ -49,5 +49,18 @@ class FixedLengthIntStackSpec extends Specification {
         where:
         elements | expected
         []       | 0
+    }
+
+    def "the stack follows the First-In-Last-Out order"(List<Integer> elements) {
+        when: "adding elements"
+        and: "popping elements"
+        then: "their order is reversed"
+        where:
+        elements << [[0]]
+    }
+
+    def "a stack can be created with varying capacity"() {
+        when: "creating a new stack with given capacity"
+        then: "the new stack has the given capacity"
     }
 }
