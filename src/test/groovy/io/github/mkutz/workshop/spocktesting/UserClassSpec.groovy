@@ -1,4 +1,4 @@
-package de.assertagile.workshop.spocktesting
+package io.github.mkutz.workshop.spocktesting
 
 import spock.lang.PendingFeature
 import spock.lang.Specification
@@ -16,7 +16,7 @@ class UserClassSpec extends Specification {
         user = new User("jdoe", "John", "Doe", LocalDate.now().minusYears(17))
 
         when:
-        boolean isOfAge = user.isOfAge()
+        var isOfAge = user.isOfAge()
 
         then:
         !isOfAge
@@ -28,7 +28,7 @@ class UserClassSpec extends Specification {
         user = new User("jdoe", "John", "Doe", LocalDate.now().minusYears(18))
 
         when:
-        boolean isOfAge = user.isOfAge()
+        var isOfAge = user.isOfAge()
 
         then:
         isOfAge

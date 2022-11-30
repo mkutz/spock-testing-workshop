@@ -1,4 +1,4 @@
-package de.assertagile.workshop.spocktesting;
+package io.github.mkutz.workshop.spocktesting;
 
 import java.time.LocalDate;
 
@@ -34,6 +34,7 @@ public class User {
 
     public boolean isOfAge() {
         return false;
+        //return LocalDate.now().minusYears(18).equals(birthday);
     }
 
     public UserEntity toEntity() {

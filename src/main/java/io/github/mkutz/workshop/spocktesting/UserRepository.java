@@ -1,4 +1,4 @@
-package de.assertagile.workshop.spocktesting;
+package io.github.mkutz.workshop.spocktesting;
 
 interface UserRepository {
 
