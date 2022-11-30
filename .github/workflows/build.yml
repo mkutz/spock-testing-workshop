@@ -24,7 +24,5 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - name: build with Maven
-        run: ./mvnw -B package
-      - name: build with Gradle
-        run: ./gradlew build
+      - run: ./mvnw -B package
+      - run: ./gradlew build
