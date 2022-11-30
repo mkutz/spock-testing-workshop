@@ -6,12 +6,12 @@ Workshop for testing Java projects with [Spock] and [Groovy].
 
 In order to get [Spock] into our Maven project, we need to do the following in our [pom.xml].
 
-1. Add Groovy as a (test) dependency (see [pom.xml](pom.xml#L27-L33)).
-2. Add Spock dependency (see [pom.xml](pom.xml#L35-L40)).
-3. Add ByteBuddy and Objenesis in order to be able to Mock classes (see [pom.xml](pom.xml#L42-L58)).
-4. Make Maven aware of `/src/test/groovy` being a test source directory since Maven’s default is `/src/test/java` (see [pom.xml](pom.xml#L77-L78)).
-5. Add the [GMavenPlus] plugin, to compile your Groovy sources (see [pom.xml](pom.xml#L81-L95)).
-6. Make Maven Surefire plugin aware of files ending with `*Spec` are test class files since Surefire’s default is `*Test` (see [pom.xml](pom.xml#L102-L113)).
+1. Add Groovy and Spock as (test) dependencies (see [pom.xml](pom.xml#L41-L46)) and (see [pom.xml](pom.xml#L48-L52)).
+   Note that the version tags can be omitted due to the dependency management (see [pom.xml](pom.xml#L21-L39)).
+2. Add ByteBuddy and Objenesis in order to be able to Mock classes (see [pom.xml](pom.xml#L54-L70)).
+3. Make Maven aware of `/src/test/groovy` being a test source directory since Maven’s default is `/src/test/java` (see [pom.xml](pom.xml#L88-L89)).
+4. Add the [GMavenPlus] plugin, to compile your Groovy sources and configure the maven-compiler-plugin (see [pom.xml](pom.xml#L92-L115)).
+5. Make Maven Surefire plugin aware of files ending with `*Spec` are test class files since Surefire’s default is `*Test` (see [pom.xml](pom.xml#L117-L128)).
 
 ## Project Setup with Gradle
 
@@ -19,17 +19,18 @@ In order to get [Spock] into our Gradle project, we need to do the following in 
 
 1. Add the Groovy plugin (see [build.gradle](build.gradle#L3)).
 2. Add Groovy as a `testImplementation` dependency (see [build.gradle](build.gradle#L12)).
-3. Add Spock dependency (see [build.gradle](build.gradle#L13)).
-4. Add ByteBuddy and Objenesis in order to be able to Mock classes (see [build.gradle](build.gradle#L14-15)).
+3. Add Groovy and Spock dependency (see [build.gradle](build.gradle#L12-L16)).
+4. Add ByteBuddy and Objenesis in order to be able to Mock classes (see [build.gradle](build.gradle#L18-19)).
+5. Configure Gradle to use JUnit 5 (see [build.gradle](build.gradle#L27-29))
 
 ## Part 1: Blocks, Expectations and Pending Features
 
 Read the [Spock Primer section] of the [Spock Framework Reference Documentation] to learn about the basic [Spock] terminology, fixture and feature methods, blocks and expectations.
 
-Also I don't like block comments to stay in the test after it has been implemented (as suggested in the [Specifications as Documentation section]) for I want the *code* to be self-explanatory.
+Also, I don't like block comments to stay in the test after it has been implemented (as suggested in the [Specifications as Documentation section]) for I want the *code* to be self-explanatory.
 
 Then try to do the following objectives:
-- [ ] The method `isOfAge` method in [User] is not implemented properly yet. However there is a test in [UserClassSpec] which is annotated with `@PendingFeature`. Change `isOfAge`, in order to make the test's expectation be true. Once you did, remove the annotation.<br/>
+- [ ] The method `isOfAge` method in [User] is not implemented properly yet. However, there is a test in [UserClassSpec] which is annotated with `@PendingFeature`. Change `isOfAge`, in order to make the test's expectation be true. Once you did, remove the annotation.<br/>
   Don't implement the method, just make the test's expectation true doing the very least necessary.
 - [ ] The feature methods uses `given`, `when` and `then`. Try to make it shorter using an `expect` block.
 - [ ] Our current implementation of [User] allows to create users who were not born yet. Write a `@PendingFeature` that expects that `"creating a user with a future birthday throws an IllegalArgumentException"`.
