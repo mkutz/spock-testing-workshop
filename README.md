@@ -1,4 +1,4 @@
-# Spock Testing Workshop [![Build Status](https://github.com/mkutz/spock-testing-workshop/workflows/verify/badge.svg)](https://github.com/mkutz/spock-testing-workshop/actions)
+# Spock Testing Workshop [![Build](https://github.com/mkutz/spock-testing-workshop/actions/workflows/build.yml/badge.svg)](https://github.com/mkutz/spock-testing-workshop/actions/workflows/build.yml)
 
 Workshop for testing Java projects with [Spock] and [Groovy].
 
