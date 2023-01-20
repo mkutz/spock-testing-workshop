@@ -32,11 +32,3 @@ jobs:
       - run: ./mvnw -B package
 
       - run: ./gradlew build
-
-      - name: Enable auto merge for Dependabot PRs
-        if: github.event_name == 'pull_request' && github.event.pull_request.user.login == 'dependabot[bot]'
-        run: |
-          gh pr review --approve "${{ github.event.pull_request.html_url }}"
-          gh pr merge --auto --rebase --delete-branch "${{ github.event.pull_request.html_url }}"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
