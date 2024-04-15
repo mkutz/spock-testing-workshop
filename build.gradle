@@ -19,7 +19,7 @@ dependencies {
     testImplementation 'org.objenesis:objenesis:3.3'
 
     testImplementation 'ch.qos.logback:logback-classic:1.5.3'
-    compileOnly 'org.slf4j:slf4j-api:2.0.12'
+    compileOnly 'org.slf4j:slf4j-api:2.0.13'
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_17
