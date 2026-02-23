@@ -16,7 +16,7 @@ dependencies {
     testImplementation 'org.spockframework:spock-core'
 
     testImplementation 'net.bytebuddy:byte-buddy:1.18.3'
-    testImplementation 'org.objenesis:objenesis:3.4'
+    testImplementation 'org.objenesis:objenesis:3.5'
 
     testImplementation 'ch.qos.logback:logback-classic:1.5.32'
     compileOnly 'org.slf4j:slf4j-api:2.0.17'
